@@ -1,0 +1,97 @@
+[
+  {
+    "menu": "work-subpage.works.academic-conference.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/222287213239133",
+        "image": "img_banner_1.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/22228721df9133",
+        "image": "img_banner_1.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872fasdf19133",
+        "image": "img_banner_1.png"
+      }
+    ]
+  },
+  {
+    "menu": "work-subpage.works.education.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872sdfafas19133",
+        "image": "img_banner_1.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/222287dsfa219133",
+        "image": "img_banner_1.png"
+      }
+    ]
+  },
+  {
+    "menu": "work-subpage.works.conference.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872fasdf19133",
+        "image": "img_banner_1.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/22228721123191pp133",
+        "image": "img_banner_1.png"
+      }
+    ]
+  },
+  {
+    "menu": "work-subpage.works.seminar.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/222287219dsafa133",
+        "image": "img_banner_1.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/22228721fasdfas9133",
+        "image": "img_banner_1.png"
+      }
+    ]
+  },
+  {
+    "menu": "work-subpage.works.promotion.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872fads1133",
+        "image": "img_banner_2.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872a19133",
+        "image": "img_banner_2.png"
+      }
+    ]
+  },
+  {
+    "menu": "work-subpage.works.exhibition.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872b19133",
+        "image": "img_banner_2.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872p19133",
+        "image": "img_banner_2.png"
+      }
+    ]
+  },
+  {
+    "menu": "work-subpage.works.festival.name",
+    "linkList": [
+      {
+        "link": "https://blog.naver.com/revivallabs/222287219cvzx133",
+        "image": "img_banner_2.png"
+      },
+      {
+        "link": "https://blog.naver.com/revivallabs/2222872191fdsa33",
+        "image": "img_banner_3.png"
+      }
+    ]
+  }
+]

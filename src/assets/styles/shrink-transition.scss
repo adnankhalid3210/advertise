@@ -1,0 +1,41 @@
+.shrink {
+  &-enter-active {
+    animation: shrink 0.3s reverse;
+  }
+  &-leave-active {
+    animation: shrink 0.3s;
+  }
+}
+
+.shrink--restore-delayed {
+  &-enter-active {
+    animation: shrink-restore-delayed 0.6s;
+  }
+  &-leave-active {
+    animation: shrink 0.3s;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+// 애니메이션이 시작하기 전에는 scale이 먹지 않으므로 delay 를 css에서 넣으면
+// 본래 사이즈로 나왔다가 다시 줄어들었다가 늘어나는 애니메이션이 시작한다.
+// keyframe에 딜레이를 넣어줘야 함
+@keyframes shrink-restore-delayed {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

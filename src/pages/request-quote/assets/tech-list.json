@@ -1,0 +1,37 @@
+[
+  {
+    "menu": "event-tech.techs.live-wordcloud.name",
+    "menuIcon": "ico_live_wordcloud.svg",
+    "description": "event-tech.techs.live-wordcloud.description"
+  },
+  {
+    "menu": "event-tech.techs.live-check-in.name",
+    "menuIcon": "ico_live_check.svg",
+    "description": "event-tech.techs.live-check-in.description"
+  },
+  {
+    "menu": "event-tech.techs.punchline.name",
+    "menuIcon": "ico_n_word.svg",
+    "description": "event-tech.techs.punchline.description"
+  },
+  {
+    "menu": "event-tech.techs.stamptour.name",
+    "menuIcon": "ico_stamp.svg",
+    "description": "event-tech.techs.stamptour.description"
+  },
+  {
+    "menu": "event-tech.techs.quizground.name",
+    "menuIcon": "ico_live_quiz.svg",
+    "description": "event-tech.techs.quizground.description"
+  },
+  {
+    "menu": "event-tech.techs.tile-show.name",
+    "menuIcon": "ico_live_tile.svg",
+    "description": "event-tech.techs.tile-show.description"
+  },
+  {
+    "menu": "event-tech.techs.guest-book.name",
+    "menuIcon": "ico_live_guest.svg",
+    "description": "event-tech.techs.guest-book.description"
+  }
+]

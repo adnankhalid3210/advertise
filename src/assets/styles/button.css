@@ -1,0 +1,39 @@
+.action-button {
+  @apply inline-block bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 leading-none mr-5;
+}
+.action-button:last-of-type {
+  @apply mr-0;
+}
+.action-button:hover {
+  @apply bg-gray-400;
+}
+
+.action-button-green {
+  @apply bg-green-400 text-gray-800 font-bold border-green-700;
+}
+.action-button-green:hover {
+  @apply bg-green-500 border-green-800;
+}
+
+.action-button-red {
+  @apply bg-red-300 text-gray-700 font-bold border-red-600;
+}
+.action-button-red:hover {
+  @apply bg-red-400 border-red-700;
+}
+
+.action-button-yellow {
+  @apply bg-yellow-400 text-gray-800 font-bold border-yellow-500;
+}
+.action-button--yellow:hover {
+  @apply bg-yellow-500 border-yellow-600;
+}
+
+.action-button[disabled] {
+  opacity: 0.8;
+  cursor: not-allowed;
+  @apply bg-gray-400 border-gray-400;
+}
+.action-button[disabled]:hover {
+  @apply bg-gray-400 border-gray-400;
+}

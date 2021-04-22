@@ -1,0 +1,38 @@
+@import url("/fonts/lg.css");
+
+$trackTitleBackgroundColor: #b83693;
+$trackTitleColor: #fff;
+$trackFilterButtonBackgroundColor: #624c9f;
+$trackFilterButtonColor: #fff;
+$inactiveButtonColor: #a6a6a6;
+$inactiveButtonBackgroundColor: #f9f9f9;
+$font: "LG Smart", "Arial Narrow", Sans-Serif, sans-serif;
+$textColor: #101010;
+
+$f0: #e53935;
+$f1: #8e24aa;
+$f2: #5e35b1;
+$f3: #3949ab;
+$f4: #1e88e5;
+$f5: #039be5;
+$f6: #00acc1;
+$f7: #00897b;
+$f8: #43a047;
+$f9: #7cb342;
+$f10: #c0ca33;
+$f11: #fdd835;
+$f12: #ffb300;
+$f13: #fb8c00;
+$f14: #f4511e;
+$f15: #6d4c41;
+$f16: #757575;
+$f17: #546e7a;
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+::v-deep .v-btn {
+  text-transform: none !important;
+}

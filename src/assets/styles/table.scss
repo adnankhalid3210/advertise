@@ -1,0 +1,27 @@
+.standard-table {
+  @apply w-full table-fixed bg-white shadow-md rounded mb-4 text-base;
+
+  td,
+  th {
+    @apply p-5;
+    word-break: break-word;
+  }
+  thead {
+    @apply text-center;
+    tr {
+      @apply border-b bg-gray-200;
+    }
+    .checkbox-holder {
+      width: 3.5rem;
+    }
+  }
+  tbody {
+    @apply text-left;
+    tr {
+      @apply border-b;
+      &:hover {
+        @apply bg-orange-100;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+//todo 행사별로 따로 업로드 한 css 를 적용해야 함
+@import "~@/assets/styles/neue-hass-unica.css";
+@import "~@/assets/styles/default.scss";
+
+.layout {
+  grid-template-areas:
+    "main-header"
+    "main-content"
+    "main-footer";
+
+  &__main {
+    @apply m-auto;
+    @screen lg {
+      max-width: 50rem;
+    }
+    &__footer,
+    &__header {
+      max-width: unset;
+      @apply w-full;
+    }
+  }
+}

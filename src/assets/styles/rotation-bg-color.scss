@@ -1,0 +1,79 @@
+$f0: #e53935;
+$f1: #8e24aa;
+$f2: #5e35b1;
+$f3: #3949ab;
+$f4: #1e88e5;
+$f5: #039be5;
+$f6: #00acc1;
+$f7: #00897b;
+$f8: #43a047;
+$f9: #7cb342;
+$f10: #c0ca33;
+$f11: #fdd835;
+$f12: #ffb300;
+$f13: #fb8c00;
+$f14: #f4511e;
+$f15: #6d4c41;
+$f16: #757575;
+$f17: #546e7a;
+
+.rotation {
+  color: white;
+  &--0 {
+    background-color: $f0;
+  }
+  &--1 {
+    background-color: $f1;
+  }
+  &--2 {
+    background-color: $f2;
+  }
+  &--3 {
+    background-color: $f0;
+  }
+  &--4 {
+    background-color: $f4;
+  }
+  &--5 {
+    background-color: $f5;
+  }
+  &--6 {
+    background-color: $f6;
+  }
+  &--7 {
+    background-color: $f7;
+  }
+  &--8 {
+    background-color: $f8;
+  }
+  &--9 {
+    background-color: $f9;
+  }
+  &--10 {
+    background-color: $f10;
+  }
+  &--11 {
+    background-color: $f11;
+    color: $f16;
+  }
+  &--12 {
+    background-color: $f12;
+  }
+  &--13 {
+    background-color: $f13;
+  }
+  &--14 {
+    background-color: $f14;
+  }
+  &--15 {
+    background-color: $f15;
+  }
+  &--16 {
+    background-color: $f16;
+    color: #0e2d3e;
+  }
+  &--17 {
+    background-color: $f17;
+    color: black;
+  }
+}

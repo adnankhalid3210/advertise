@@ -1,0 +1,42 @@
+[
+  {
+    "label": "request-quote.header-menus.home",
+    "to": {
+      "name": "Main",
+      "hash": "#home"
+    },
+    "active": false
+  },
+  {
+    "label": "request-quote.header-menus.work",
+    "to": {
+      "name": "Main",
+      "hash": "#work"
+    },
+    "active": false
+  },
+  {
+    "label": "request-quote.header-menus.event-tech",
+    "to": {
+      "name": "Main",
+      "hash": "#event-tech"
+    },
+    "size": "large",
+    "active": false
+  },
+  {
+    "label": "request-quote.header-menus.blog",
+    "link": "https://blog.congkong.net",
+    "target": "_blank",
+    "active": false
+  },
+  {
+    "label": "request-quote.header-menus.contact",
+    "to": {
+      "name": "Main",
+      "hash": "#contact"
+    },
+    "size": "medium",
+    "active": false
+  }
+]

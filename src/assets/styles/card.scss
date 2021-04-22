@@ -1,0 +1,8 @@
+@mixin card_button_style {
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+  &:hover {
+    background-color: #4f4f4f;
+    color: #fff;
+  }
+}

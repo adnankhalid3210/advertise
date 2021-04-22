@@ -1,0 +1,38 @@
+@import "~@/assets/styles/neue-hass-unica.css";
+
+.layout::v-deep * {
+  font-family: "neue-haas-unica", "Noto Sans CJK KR", sans-serif;
+}
+
+.layout {
+  --layout-background-color: transparent;
+  --layout__text-color: black;
+
+  // 메인 콘텐츠 영역 변수
+  --layout__main-text-color: var(--layout-text-color);
+  --layout__main-background-color: var(--layout-background-color);
+
+  --layout__main__header-text-color: white;
+  --layout__main__content-text-color: var(--layout__main-text-color);
+  --layout__main__footer-text-color: var(--layout__main-text-color);
+
+  --layout__main__header-background-color: #1c1d1e;
+  --layout__main__content-background-color: var(--layout__main-background-color);
+  --layout__main__footer-background-color: var(--layout__main-background-color);
+
+  background-color: var(--layout-background-color);
+
+  &__main {
+    &__header {
+      background-color: var(--layout__main__header-background-color);
+      color: var(--layout__main__header-text-color);
+
+      max-width: unset;
+      @apply w-full p-2 pt-0 pb-0 flex;
+    }
+    &__content {
+    }
+    &__header {
+    }
+  }
+}

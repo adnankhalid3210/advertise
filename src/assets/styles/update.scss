@@ -1,0 +1,10 @@
+.form {
+  transition: background-color 0.4s;
+  &--submitting {
+    background: yellow;
+  }
+
+  &--updated {
+    background: green;
+  }
+}

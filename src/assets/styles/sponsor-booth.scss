@@ -1,0 +1,54 @@
+.article-container {
+  font-family: "Noto Sans KR", Courier, monospace;
+  font-size: 14px;
+  color: #474747;
+  padding: 0 22px 22px;
+  list-style: none;
+  display: block;
+
+  .article {
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    list-style: none;
+    display: block;
+
+    &__file-name {
+      width: 100%;
+      display: inline-block;
+      vertical-align: super;
+    }
+
+    &__download-button {
+      margin-top: 10px;
+      zoom: 1;
+      position: relative;
+      width: 100px;
+      padding: 0.3em;
+      line-height: 15px;
+      display: inline-block;
+      -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+      transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+
+      &--blue {
+        border-radius: 25px;
+        color: #2162f3;
+
+        background-color: #fff;
+        border: 1px solid #2162f3;
+
+        &:hover {
+          background-color: #2162f3;
+          color: #fff;
+        }
+
+        &:active {
+          top: 3px;
+          outline: none;
+        }
+      }
+    }
+  }
+}

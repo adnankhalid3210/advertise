@@ -1,0 +1,96 @@
+@import "~@/assets/styles/neue-hass-unica.css";
+@import "~@/assets/styles/default.scss";
+
+.layout {
+  // 서브 콘텐츠 영역 변수
+  --layout__sub-background-color: #ffffffbf;
+  --layout__sub-text-color: black;
+  --layout__sub__header-text-color: var(--layout__sub-text-color);
+  --layout__sub__content-text-color: var(--layout__sub-text-color);
+  --layout__sub__reaction-text-color: var(--layout__sub-text-color);
+
+  --layout__sub__header-background-color: var(--layout__sub-background-color);
+  --layout__sub__content-background-color: var(--layout__sub-background-color);
+  --layout__sub__reaction-background-color: var(--layout__sub-background-color);
+
+  @apply relative w-full min-h-full grid min-h-screen max-h-screen;
+  background-color: var(--layout-background-color);
+
+  &__sub {
+    background-color: var(--layout__sub-background-color);
+
+    &__header {
+      background-color: var(--layout__sub__header-background-color);
+      color: var(--layout__sub__header-text-color);
+      grid-area: sub-header;
+      display: flex;
+      flex-wrap: wrap;
+      button {
+        align-self: start;
+        justify-self: start;
+      }
+    }
+
+    &__content {
+      background-color: var(--layout__sub__content-background-color);
+      color: var(--layout__sub__content-text-color);
+      grid-area: sub-content;
+      overflow: auto;
+    }
+
+    &__reaction {
+      background-color: var(--layout__sub__reaction-background-color);
+      color: var(--layout__sub__reaction-text-color);
+      grid-area: sub-reaction;
+    }
+  }
+
+  &__main {
+    background-color: var(--layout__main-background-color);
+    color: var(--layout__main-text-color);
+
+    &__header {
+      background-color: var(--layout__main__header-background-color);
+      color: var(--layout__main__header-text-color);
+      grid-area: main-header;
+      display: flex;
+    }
+
+    &__content {
+      background-color: var(--layout__main__content-background-color);
+      color: var(--layout__main__content-text-color);
+      grid-area: main-content;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    &__footer {
+      background-color: var(--layout__main__footer-background-color);
+      color: var(--layout__main__footer-text-color);
+      grid-area: main-footer;
+    }
+  }
+
+  // 기본이 모바일
+  grid-template-areas:
+    "main-header"
+    "main-content"
+    "main-footer"
+    "sub-header"
+    "sub-reaction"
+    "sub-content";
+  grid-template-rows: auto auto auto auto auto 1fr;
+  grid-template-columns: 1fr;
+
+  // 큰 사이즈
+  @screen lg {
+    grid-template-areas:
+      "main-header main-header"
+      "main-content sub-header"
+      "main-content sub-content"
+      "main-content sub-reaction"
+      "main-footer sub-reaction";
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-columns: 3fr 1fr;
+  }
+}

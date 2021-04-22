@@ -1,0 +1,66 @@
+[
+  {
+    "menu": "work-subpage.works.enterprises.name",
+    "imageList": [
+      "img_work_company_1.png",
+      "img_work_company_2.png",
+      "img_work_company_3.png",
+      "img_work_company_4.png",
+      "img_work_company_5.png",
+      "img_work_company_6.png",
+      "img_work_company_7.png",
+      "img_work_company_8.png"
+    ],
+    "active": true,
+    "clients": 280,
+    "description": "work-subpage.works.enterprises.description"
+  },
+  {
+    "menu": "work-subpage.works.public-institutions.name",
+    "imageList": [
+      "img_work_public_1.png",
+      "img_work_public_2.png",
+      "img_work_public_3.png",
+      "img_work_public_4.png",
+      "img_work_public_5.png",
+      "img_work_public_6.png",
+      "img_work_public_7.png",
+      "img_work_public_8.png"
+    ],
+    "active": false,
+    "clients": 280,
+    "description": "work-subpage.works.public-institutions.description"
+  },
+  {
+    "menu": "work-subpage.works.academy.name",
+    "imageList": [
+      "img_work_academy_7.png",
+      "img_work_academy_1.png",
+      "img_work_academy_2.png",
+      "img_work_academy_3.png",
+      "img_work_academy_4.png",
+      "img_work_academy_5.png",
+      "img_work_academy_6.png",
+      "img_work_academy_8.png"
+    ],
+    "active": false,
+    "clients": 280,
+    "description": "work-subpage.works.academy.description"
+  },
+  {
+    "menu": "work-subpage.works.etc.name",
+    "imageList": [
+      "img_work_other_1.png",
+      "img_work_other_2.png",
+      "img_work_other_3.png",
+      "img_work_other_4.png",
+      "img_work_other_5.png",
+      "img_work_other_6.png",
+      "img_work_other_7.png",
+      "img_work_other_8.png"
+    ],
+    "clients": 280,
+    "active": false,
+    "description": "work-subpage.works.etc.description"
+  }
+]

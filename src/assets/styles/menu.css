@@ -1,0 +1,11 @@
+.menu-button {
+  @apply block text-gray-700 border border-gray-400 rounded py-3 px-4 leading-none;
+  cursor: pointer;
+}
+.menu-button:hover {
+  @apply bg-gray-300;
+}
+
+.menu-container {
+  @apply block border border-gray-400 rounded p-5;
+}

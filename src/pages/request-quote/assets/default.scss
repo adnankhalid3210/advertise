@@ -1,0 +1,222 @@
+$lightColor: #ff606d;
+$defaultColor: #f33737;
+$darkColor: #ec2323;
+$gray7: #1c1d1e;
+$gray6: #454548;
+$gray5: #77777a;
+$gray4: #8e8e90;
+$gray3: #bbbbbe;
+$gray2: #dadce0;
+$gray1: #f8fafa;
+
+$space-xxl: 8.5rem;
+$space-xl: 5rem;
+$space-l: 2.5rem;
+$space-m: 1.5rem;
+$space-s: 1rem;
+$space-xs: 0.5rem;
+$space-xs: 0.25rem;
+
+$menuHeight: 4.5rem;
+
+.bgChange{
+  background: transparent linear-gradient(107deg, $lightColor 0%, $defaultColor 100%) 0% 0% no-repeat padding-box;
+  border-radius: 4px !important;
+}
+
+.default-color {
+  color: $defaultColor;
+}
+
+.gray4-color {
+  color: $gray4;
+}
+
+.headline1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.025em;
+}
+
+.headline2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  letter-spacing: -0.05em;
+}
+
+.headline3 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: -0.025em;
+}
+
+// subheadline
+.sub-headline {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.025em;
+}
+
+.base-body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+  &--alter {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+
+.caption {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  letter-spacing: -0.025em;
+}
+
+.button-text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.025em;
+  &--large {
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+  }
+  &--tab {
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: rgba(0, 0, 0, 0.7);
+    &:hover,
+    &:focus {
+    }
+  }
+}
+
+.button {
+  @extend .button-text;
+  @apply self-center inline-block text-center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  height: 2.5em;
+  line-height: 2.5em;
+
+  &--border {
+    color: $defaultColor;
+    border: 1px solid $defaultColor;
+    margin-top: $space-m;
+    margin-bottom: $space-m;
+    &:hover {
+      color: white;
+      border: 1px solid $darkColor;
+      background-color: $lightColor;
+    }
+  }
+}
+
+.request-button {
+  @extend .button-text--large;
+  @apply inline-block;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin-right: 0.5rem;
+  border-radius: 0.3em;
+  background-color: $defaultColor;
+  border: 1px solid $defaultColor;
+  color: white;
+  height: 3em;
+  line-height: 3em;
+  transition: all 0.4s;
+  &:hover {
+    font-weight: bold;
+    background-color: $darkColor;
+    // border: 1px solid $gray5;
+  }
+}
+
+.header-menu {
+  @apply fixed w-full top-0;
+  height: $menuHeight;
+}
+
+.main-content {
+  @apply bg-white w-full;
+  margin-top: $menuHeight;
+  scroll-behavior: smooth;
+  &--blocked {
+    overflow: hidden;
+  }
+
+  &__subpage {
+    @apply p-4 m-auto overflow-hidden;
+    &:last-of-type {
+      min-height: calc(100 * var(--vh) - #{$menuHeight} * 3);
+    }
+    scroll-margin-top: $menuHeight;
+    scroll-behavior: smooth;
+    width: 80%;
+    margin-top: $space-xl;
+
+    &:first-of-type {
+      scroll-margin-top: $menuHeight * 3;
+    }
+
+    // For old safari
+    scroll-snap-margin: $menuHeight;
+  }
+}
+
+footer {
+  @apply w-full inline-block text-white text-center p-4;
+  background-color: $darkColor;
+
+  p {
+    line-height: 3em;
+  }
+}
+
+.estimate {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: red;
+  z-index: 100;
+}
+
+.headline2--counter {
+  font-weight: normal;
+}
+
+%marginRight{
+  margin-right: 2rem;
+}
+
+.sub-headline {
+  margin: 10px auto $space-l ;
+  color: rgba(0, 0, 0, 0.7);
+  ::v-deep strong {
+    color: $defaultColor;
+    font-weight: normal;
+  }
+  &--narrow {
+    margin: $space-s auto;
+  }
+}

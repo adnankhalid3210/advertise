@@ -1,0 +1,108 @@
+//todo 행사별로 따로 업로드 한 css 를 적용해야 함
+@import "~@/assets/styles/neue-hass-unica.css";
+
+.layout::v-deep * {
+  font-family: "neue-haas-unica", "Noto Sans CJK KR", sans-serif;
+}
+
+.layout {
+  @apply p-0 w-full flex flex-col h-full;
+
+  @screen lg {
+    @apply h-full;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "main sub";
+    &--has-header {
+      grid-template-areas:
+        "header header"
+        "main sub";
+      grid-template-rows: 5rem auto;
+    }
+  }
+
+  &__header {
+    @apply p-1 h-16 sticky;
+
+    // 스크롤이 되게 하기 위해서
+    // https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox
+    justify-self: flex-start;
+    top: 0;
+    background: black;
+    // 메인 콘텐츠보다 높아야 한다
+    z-index: 10;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 1.4em;
+    }
+
+    @screen lg {
+      @apply p-2 h-20 w-full;
+      grid-area: header;
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &__contents {
+    @apply p-0 m-0;
+    &--main {
+      @apply sticky justify-self-start pb-16;
+      max-height: calc(100vh - 8rem);
+      min-height: 15rem;
+      // 스크롤이 되게 하기 위해서
+      // https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox
+      top: 0;
+      overflow: hidden;
+      z-index: 8;
+
+      @screen md {
+        @apply p-4;
+      }
+
+      @screen lg {
+        @apply p-8 static w-full flex-col flex;
+        grid-area: main;
+        max-height: unset;
+      }
+    }
+    &--after-header {
+      top: 4rem;
+    }
+    &--sub {
+      @apply p-1;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 2;
+      @screen md {
+        @apply p-4;
+      }
+      @screen lg {
+        @apply p-8 static overflow-auto;
+      }
+    }
+  }
+
+  /* todo  모바일 가로일 때 비디오만 보이도록
+      @screen landscape && sm {
+    &__header,
+    &__contents--sub {
+      display: none;
+    }
+    &__contents--main {
+      @apply p-0;
+      position: absolute;
+      max-height: unset;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }*/
+}
